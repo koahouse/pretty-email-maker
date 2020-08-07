@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pretty-email-maker/precache-manifest.b3b5a8f0a3e3a8d92c8075e143151115.js"
+  "/pretty-email-maker/precache-manifest.01b322524f4293236c7fe065937e4ea3.js"
 );
 
 self.addEventListener('message', (event) => {
