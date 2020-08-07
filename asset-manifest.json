@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7b3f475.chunk.css",
-    "main.js": "/static/js/main.8d53e981.chunk.js",
-    "main.js.map": "/static/js/main.8d53e981.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.abee7bf6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.abee7bf6.js.map",
-    "static/js/2.d0e5fbbb.chunk.js": "/static/js/2.d0e5fbbb.chunk.js",
-    "static/js/2.d0e5fbbb.chunk.js.map": "/static/js/2.d0e5fbbb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6b7085ecbe7f05841ea770c5329bdee0.js": "/precache-manifest.6b7085ecbe7f05841ea770c5329bdee0.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.e7b3f475.chunk.css.map": "/static/css/main.e7b3f475.chunk.css.map",
-    "static/js/2.d0e5fbbb.chunk.js.LICENSE.txt": "/static/js/2.d0e5fbbb.chunk.js.LICENSE.txt"
+    "main.css": "/pretty-email-maker/static/css/main.e7b3f475.chunk.css",
+    "main.js": "/pretty-email-maker/static/js/main.fb1d11d9.chunk.js",
+    "main.js.map": "/pretty-email-maker/static/js/main.fb1d11d9.chunk.js.map",
+    "runtime-main.js": "/pretty-email-maker/static/js/runtime-main.57cf01db.js",
+    "runtime-main.js.map": "/pretty-email-maker/static/js/runtime-main.57cf01db.js.map",
+    "static/js/2.d0e5fbbb.chunk.js": "/pretty-email-maker/static/js/2.d0e5fbbb.chunk.js",
+    "static/js/2.d0e5fbbb.chunk.js.map": "/pretty-email-maker/static/js/2.d0e5fbbb.chunk.js.map",
+    "index.html": "/pretty-email-maker/index.html",
+    "precache-manifest.b3b5a8f0a3e3a8d92c8075e143151115.js": "/pretty-email-maker/precache-manifest.b3b5a8f0a3e3a8d92c8075e143151115.js",
+    "service-worker.js": "/pretty-email-maker/service-worker.js",
+    "static/css/main.e7b3f475.chunk.css.map": "/pretty-email-maker/static/css/main.e7b3f475.chunk.css.map",
+    "static/js/2.d0e5fbbb.chunk.js.LICENSE.txt": "/pretty-email-maker/static/js/2.d0e5fbbb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.abee7bf6.js",
+    "static/js/runtime-main.57cf01db.js",
     "static/js/2.d0e5fbbb.chunk.js",
     "static/css/main.e7b3f475.chunk.css",
-    "static/js/main.8d53e981.chunk.js"
+    "static/js/main.fb1d11d9.chunk.js"
   ]
 }
