@@ -110,7 +110,7 @@ export const welcomeEmailHtml = `<!doctype html>
                       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                         <tbody>
                           <tr>
-                            <td style="width:100px;"> <img height="auto" src="https://i.etsystatic.com/17857814/r/il/bdc427/1652788625/il_570xN.1652788625_10xv.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100"
+                            <td style="width:100px;"> <img height="auto" src="https://i.imgur.com/r77G5DE.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="100"
                               /> </td>
                           </tr>
                         </tbody>
