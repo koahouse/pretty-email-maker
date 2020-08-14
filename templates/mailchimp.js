@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="'Roboto','Helvetica Neue', Arial, sans-serif" />
+      <mj-all font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica Neue', Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" />
       <mj-body background-color="#ffffff"/>
       <mj-text font-size="14px" font-weight="400" line-height="24px" padding="0 0 24px 0" />
       <mj-class name="small-print" align="center" color="#A5A6A9" font-size="11px" line-height="16px"/>
