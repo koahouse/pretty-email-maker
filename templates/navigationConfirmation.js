@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-style>
-      .body-left > div { Margin: 0px 20px !important; } .gmail-show { display: none !important; } u+.body .gmail-hide { display: none !important; } u+.body .gmail-show { display: table-cell !important; }
+      .body-left > div { Margin: 0px 20px !important; } .gmail-show { display: none !important; } u+div .gmail-hide { display: none !important; } u+div .gmail-show { display: table-cell !important; }
     </mj-style>
     <mj-attributes>
 
@@ -24,29 +24,17 @@ const mjml = `<mjml>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
         <mj-text>
-          Hi {{memberFirstName}}
+          Hi \${memberFirstName}
         </mj-text>
         <mj-text>
-          I am {{navigatorFirstName}}, your care navigator at Oliva. Everything is set up for your appointment on <strong>{{dateTime}}</strong>
+          I am \${navigatorFirstName}, your care navigator at Oliva. Everything is set up for your appointment on <strong>\${prettyDate}</strong>
         </mj-text>
-        <mj-raw>
-          <div class="gmail-show">
-        </mj-raw>
-        <mj-button href="{{googleCalendarLink}}">
+        <mj-button css-class="gmail-show" href="\${googleCalendarLink}">
           Add to Google calendar
         </mj-button>
-        <mj-raw>
-          </div>
-        </mj-raw>
-        <mj-raw>
-          <div class="gmail-hide">
-        </mj-raw>
-        <mj-button href="{{icsFileDownloadLink}}">
+        <mj-button css-class="gmail-hide" href="\${icsFileDownloadLink}">
           Add to calendar
         </mj-button>
-        <mj-raw>
-          </div>
-        </mj-raw>
         <mj-text>
           You already took a big step in your journey. Now just relax and leave everything to me.
         </mj-text>
@@ -57,7 +45,7 @@ const mjml = `<mjml>
           Take good care
         </mj-text>
         <mj-text>
-          {{navigatorFirstName}}<br/> <span>Care navigator</span>
+          \${navigatorFirstName}<br/> <span>Care navigator</span>
         </mj-text>
       </mj-column>
     </mj-section>
