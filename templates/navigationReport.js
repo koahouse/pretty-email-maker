@@ -29,13 +29,10 @@ const mjml = `<mjml>
 					Good news! I have matched you with a care provider.
         </mj-text>
         <mj-text>
-					You can find my report and recommendation in the attached file. It's encrypted so only you and I can see it.
+					You can get my report and recommendation by clicking below. It's encrypted so only you and I can see it.
         </mj-text>
-				<mj-text>
-					When you're ready, you can schedule your first appointment.
-        </mj-text>
-        <mj-button href="\${appointmentLink}">
-					Schedule an appointment
+        <mj-button href="\${memberReportFileLink}">
+				  Get your report
         </mj-button>
         <mj-text>
           If you need anything at all just reply to this email.
