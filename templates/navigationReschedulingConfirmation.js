@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-style>
-      .body-left > div { Margin: 0px 20px !important; } .gmail-show { display: none !important; } u+div .gmail-hide { display: none !important; } u+div .gmail-show { display: table-cell !important; }
+      .body-left > div { Margin: 0px 20px !important; } .gmail-show { display: none !important; } u ~ div .gmail-hide { display: none !important; } u ~ div .gmail-show { display: table-cell !important; }
     </mj-style>
     <mj-attributes>
 
