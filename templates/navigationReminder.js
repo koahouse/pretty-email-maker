@@ -18,22 +18,17 @@ const mjml = `<mjml>
     <mj-raw>
       <div class="body-left">
     </mj-raw>
-
     <mj-section>
       <mj-column>
-        <mj-divider border-color="transparent"></mj-divider>
         <mj-text>
           Hi \${memberFirstName}
         </mj-text>
         <mj-text>
-					I'm looking forward to seeing you at <strong>\${prettyTime}</strong> tomorrow.
+          I'm looking forward to seeing you at <strong>\${prettyTime}</strong> tomorrow.
         </mj-text>
         <mj-text>
-					All you need to do is find a quiet, comfortable place and click below to join the video call.
+          All you need to do is find a quiet, comfortable place and <a href="\${videoCallLink}">click here to join the video call.</a>
         </mj-text>
-        <mj-button href="\${videoCallLink}">
-					Join video call
-        </mj-button>
         <mj-text>
           If you need anything at all just reply to this email.
         </mj-text>
@@ -55,7 +50,6 @@ const mjml = `<mjml>
     <mj-raw>
       </div>
     </mj-raw>
-
   </mj-body>
 </mjml>`;
 
