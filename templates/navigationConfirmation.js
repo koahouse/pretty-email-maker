@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-style>
-      .body-left > div { Margin: 0px 20px !important; } .gmail-show { display: none !important; } u ~ div .gmail-hide { display: none !important; } u ~ div .gmail-show { display: table-cell !important; }
+      .body-left > div { Margin: 0px 20px !important; } .gmail-show { display: none !important; } u ~ div .gmail-hide { display: none !important; } u ~ div .gmail-show { display: table-cell !important; } p { margin: 0; }
     </mj-style>
     <mj-attributes>
 
@@ -23,37 +23,37 @@ const mjml = `<mjml>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text>
+        <mj-text><p>
           Hi \${memberFirstName}
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           I am \${navigatorFirstName}, your care navigator at Oliva. Everything is set up for your appointment on <strong>\${prettyDate}</strong>
-        </mj-text>
+        </p></mj-text>
         <mj-button css-class="gmail-show" href="\${googleCalendarLink}">
           Add to Google calendar
         </mj-button>
         <mj-button css-class="gmail-hide" href="\${icsFileDownloadLink}">
           Add to calendar
         </mj-button>
-        <mj-text>
+        <mj-text><p>
           You already took a big step in your journey. Now just relax and leave everything to me.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           I'll be in touch before your appointment with some practical information. If you need anything at all just reply to this email.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           Take good care
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           \${navigatorFirstName}<br/> <span>Care navigator</span>
-        </mj-text>
+        </p></mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73">Oliva aims to take the stress and anxiety out of finding yourself the right support</mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>

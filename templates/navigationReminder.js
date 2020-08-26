@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-style>
-      .body-left > div { Margin: 0px 20px !important; }
+      .body-left > div { Margin: 0px 20px !important; } p { margin: 0; }
     </mj-style>
     <mj-attributes>
       <mj-all font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica Neue', Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" />
@@ -20,31 +20,31 @@ const mjml = `<mjml>
     </mj-raw>
     <mj-section>
       <mj-column>
-        <mj-text>
+        <mj-text><p>
           Hi \${memberFirstName}
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           I'm looking forward to seeing you at <strong>\${prettyTime}</strong> tomorrow.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           All you need to do is find a quiet, comfortable place and <a href="\${videoCallLink}">click here to join the video call.</a>
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           If you need anything at all just reply to this email.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           See you tomorrow
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           \${navigatorFirstName}<br/> <span>Care navigator</span>
-        </mj-text>
+        </p></mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73">Oliva aims to take the stress and anxiety out of finding yourself the right support</mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>

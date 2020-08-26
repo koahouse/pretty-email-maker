@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-style>
-      .body-left > div { Margin: 0px 20px !important; }
+      .body-left > div { Margin: 0px 20px !important; } p { margin: 0; }
     </mj-style>
     <mj-attributes>
 
@@ -23,28 +23,28 @@ const mjml = `<mjml>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text>
+        <mj-text><p>
           Hi \${memberFirstName}
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           Just letting you know your intro meeting has been canceled successfully.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           If you'd like to book another in future, <a href="\${acuityLink}">just click here.</a>
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           Take care
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           \${navigatorFirstName}<br/> <span>Care navigator</span>
-        </mj-text>
+        </p></mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73">Oliva aims to take the stress and anxiety out of finding yourself the right support</mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>

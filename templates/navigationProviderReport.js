@@ -5,7 +5,7 @@ const { writeFileSync } = require('fs');
 const mjml = `<mjml>
   <mj-head>
     <mj-style>
-      .body-left > div { Margin: 0px 20px !important; }
+      .body-left > div { Margin: 0px 20px !important; } p { margin: 0; }
     </mj-style>
     <mj-attributes>
       <mj-all font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica Neue', Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" />
@@ -22,34 +22,34 @@ const mjml = `<mjml>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text>
+        <mj-text><p>
           Hi \${providerFirstName}
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
 					I just matched you with a member.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
 					You can get my report and recommendation by clicking below. It's encrypted so only you and I can see it.
-        </mj-text>
+        </p></mj-text>
         <mj-button href="\${providerReportFileLink}">
 				  Get your report
         </mj-button>
-        <mj-text>
+        <mj-text><p>
           If you need anything at all just reply to this email.
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
 					Warmly
-        </mj-text>
-        <mj-text>
+        </p></mj-text>
+        <mj-text><p>
           \${navigatorFirstName}<br/> <span>Care navigator</span>
-        </mj-text>
+        </p></mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73">Oliva aims to take the stress and anxiety out of finding yourself the right support</mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
