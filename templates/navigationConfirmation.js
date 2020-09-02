@@ -27,25 +27,28 @@ const mjml = `<mjml>
           Hi \${memberFirstName}
         </p></mj-text>
         <mj-text><p>
-          I am \${navigatorFirstName}, your care navigator at Oliva. Everything is set up for your appointment on <strong>\${prettyDate}</strong>
+          I'm \${navigatorFirstName}, and I’ll be helping you match with the right therapist at Oliva. We’re all set for your intro meeting on <strong>\${prettyDate}</strong>
         </p></mj-text>
         <mj-button css-class="gmail-show" href="\${googleCalendarLink}">
-          Add to Google calendar
+          Add to calendar
         </mj-button>
         <mj-button css-class="gmail-hide" href="\${icsFileDownloadLink}">
           Add to calendar
         </mj-button>
         <mj-text><p>
-          You already took a big step in your journey. Now just relax and leave everything to me.
+          If you have any questions or concerns, you can reach out to me whenever you like.
         </p></mj-text>
         <mj-text><p>
-          I'll be in touch before your appointment with some practical information. If you need anything at all just reply to this email.
+          You’ve already taken a big step towards better emotional wellbeing. So relax and leave everything to me until our first meeting. I’ll be in touch just before with a quick reminder.
         </p></mj-text>
         <mj-text><p>
-          Take good care
+          Really looking forward to meeting you.
         </p></mj-text>
         <mj-text><p>
-          \${navigatorFirstName}<br/> <span>Care navigator</span>
+          Take care,
+        </p></mj-text>
+        <mj-text><p>
+          \${navigatorFirstName}
         </p></mj-text>
       </mj-column>
     </mj-section>
@@ -53,7 +56,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
