@@ -24,19 +24,19 @@ const mjml = `<mjml>
           Hi \${memberFirstName}
         </p></mj-text>
         <mj-text><p>
-          I'm looking forward to seeing you at <strong>\${prettyTime}</strong> tomorrow.
+          Just a quick reminder that your intro meeting is at <strong>\${prettyTime}</strong> tomorrow.
         </p></mj-text>
         <mj-text><p>
-          All you need to do is find a quiet, comfortable place and <a href="\${videoCallLink}">click here to join the video call.</a>
+          All you need to do is find a quiet place where you feel comfortable, and <a href="\${videoCallLink}">click here to join the video call.</a>
         </p></mj-text>
         <mj-text><p>
-          If you need anything at all just reply to this email.
+          If you have a question you’d like to ask before then, just reply to this email.
         </p></mj-text>
         <mj-text><p>
-          See you tomorrow
+          Look forward to seeing you tomorrow,
         </p></mj-text>
         <mj-text><p>
-          \${navigatorFirstName}<br/> <span>Care navigator</span>
+          \${navigatorFirstName}
         </p></mj-text>
       </mj-column>
     </mj-section>
@@ -44,7 +44,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
