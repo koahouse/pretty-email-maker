@@ -27,22 +27,22 @@ const mjml = `<mjml>
           Hi \${memberFirstName}
         </p></mj-text>
         <mj-text><p>
-          Just letting you know your intro meeting has been rescheduled successfully. I'll see you on <strong>\${prettyDate}</strong>
+          Here’s a quick confirmation that your intro meeting was rescheduled successfully. I’ll see you on <strong>\${prettyDate}</strong>
         </p></mj-text>
         <mj-button css-class="gmail-show" href="\${googleCalendarLink}">
-          Add to Google calendar
+          Add to calendar
         </mj-button>
         <mj-button css-class="gmail-hide" href="\${icsFileDownloadLink}">
           Add to calendar
         </mj-button>
         <mj-text><p>
-          I'll be in touch before your intro meeting with some practical information. If you need anything at all just reply to this email.
+          I’ll be in touch the day before with a reminder and some practical info. If you have anything to ask me in the meantime, just reply to this email.
         </p></mj-text>
         <mj-text><p>
-          Take care
+          Take care,
         </p></mj-text>
         <mj-text><p>
-          \${navigatorFirstName}<br/> <span>Care navigator</span>
+          \${navigatorFirstName}
         </p></mj-text>
       </mj-column>
     </mj-section>
@@ -50,7 +50,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
