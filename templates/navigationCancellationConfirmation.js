@@ -27,16 +27,16 @@ const mjml = `<mjml>
           Hi \${memberFirstName}
         </p></mj-text>
         <mj-text><p>
-          Just letting you know your intro meeting has been canceled successfully.
+          Here’s a quick confirmation that your intro meeting has been cancelled.
         </p></mj-text>
         <mj-text><p>
-          If you'd like to book another in future, <a href="\${acuityLink}">just click here.</a>
+          If you’d like to rearrange a new intro meeting in the future, <a href="\${acuityLink}">click this link</a> whenever you’re ready.
         </p></mj-text>
         <mj-text><p>
-          Take care
+          We hope to meet you soon. Until then, take care.
         </p></mj-text>
         <mj-text><p>
-          \${navigatorFirstName}<br/> <span>Care navigator</span>
+          \${navigatorFirstName}
         </p></mj-text>
       </mj-column>
     </mj-section>
@@ -44,7 +44,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
