@@ -32,7 +32,7 @@ const mjml = `<mjml>
 					Good news — we’ve found a therapist we think will fit your needs.
         </p></mj-text>
         <mj-text><p>
-          You can read my <a href="\${memberReportFileLink}">report on why I’ve made this recommendation here</a>. It’s encrypted, so only you and I can access it.
+          You can read my report on why I’ve made this recommendation <a href="\${memberReportFileLink}">here</a>. It’s encrypted, so only you and I can access it.
         </p></mj-text>
         <mj-text><p>
           When you’re ready, you can go ahead and book your first sessions.
