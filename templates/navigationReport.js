@@ -26,25 +26,28 @@ const mjml = `<mjml>
           Hi \${memberFirstName}
         </p></mj-text>
         <mj-text><p>
-					Good news! I have matched you with a care provider.
+          It was great to meet you the other day.
         </p></mj-text>
         <mj-text><p>
-					You can get my <a href="\${memberReportFileLink}">report and recommendation here</a>. It's encrypted so only you and I can see it.
+					Good news — we’ve found a therapist we think will fit your needs.
         </p></mj-text>
         <mj-text><p>
-          When you're ready you can click below to schedule your next meetings.
+          You can read my <a href="\${memberReportFileLink}">report on why I’ve made this recommendation here</a>. It’s encrypted, so only you and I can access it.
+        </p></mj-text>
+        <mj-text><p>
+          When you’re ready, you can go ahead and book your first sessions.
         </p></mj-text>
         <mj-button href="\${schedulingLink}">
-				  Schedule your next meetings
+				  Book your first sessions
         </mj-button>
         <mj-text><p>
-          If you need anything at all just reply to this email.
+          As always, feel free to reply to this email if you have a question or concern.
         </p></mj-text>
         <mj-text><p>
-					Take good care
+					Take care,
         </p></mj-text>
         <mj-text><p>
-          \${navigatorFirstName}<br/> <span>Care navigator</span>
+          \${navigatorFirstName}
         </p></mj-text>
       </mj-column>
     </mj-section>
@@ -52,7 +55,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
