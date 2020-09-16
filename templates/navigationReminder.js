@@ -20,31 +20,45 @@ const mjml = `<mjml>
     </mj-raw>
     <mj-section>
       <mj-column>
-        <mj-text><p>
-          Hi \${memberFirstName}
-        </p></mj-text>
-        <mj-text><p>
-          Just a quick reminder that your intro meeting is at <strong>\${prettyTime}</strong> tomorrow.
-        </p></mj-text>
-        <mj-text><p>
-          All you need to do is find a quiet place where you feel comfortable, and <a href="\${videoCallLink}">click here to join the video call.</a>
-        </p></mj-text>
-        <mj-text><p>
-          If you have a question you’d like to ask before then, just reply to this email.
-        </p></mj-text>
-        <mj-text><p>
-          Look forward to seeing you tomorrow,
-        </p></mj-text>
-        <mj-text><p>
-          \${navigatorFirstName}
-        </p></mj-text>
+        <mj-text>
+          <p>
+            \${strings.HI} \${memberFirstName}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.JUST_A_QUICK_REMINDER} <strong>\${prettyTime}</strong> \${strings.TOMORROW}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.ALL_YOU_NEED_TO_DO_IS_FIND} <a href="\${videoCallLink}">\${strings.CLICK_HERE_TO_JOIN}</a>
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.IF_YOU_HAVE_A_QUESTION_YOUD_LIKE_TO_ASK_BEFORE}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.LOOK_FORWARD_TO_SEEING_YOU}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${navigatorFirstName}
+          </p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
+        <mj-text align="left" color="#6A6C73">
+          <p>Focus on you</p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
@@ -55,7 +69,7 @@ const mjml = `<mjml>
 
 const getHtmlEmail = () =>{
 
-  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict' });
+  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict', minify: true });
 
   if (errors.length) {
     console.error(`Error: `);

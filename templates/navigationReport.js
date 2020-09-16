@@ -67,7 +67,7 @@ const mjml = `<mjml>
 
 const getHtmlEmail = () =>{
 
-  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict' });
+  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict', minify: true });
 
   if (errors.length) {
     console.error(`Error: `);

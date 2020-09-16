@@ -23,28 +23,40 @@ const mjml = `<mjml>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text><p>
-          Hi \${memberFirstName}
-        </p></mj-text>
-        <mj-text><p>
-          Here’s a quick confirmation that your intro meeting has been cancelled.
-        </p></mj-text>
-        <mj-text><p>
-          If you’d like to rearrange a new intro meeting in the future, <a href="\${acuityLink}">click this link</a> whenever you’re ready.
-        </p></mj-text>
-        <mj-text><p>
-          We hope to meet you soon. Until then, take care.
-        </p></mj-text>
-        <mj-text><p>
-          \${navigatorFirstName}
-        </p></mj-text>
+        <mj-text>
+          <p>
+            \${strings.HI} \${memberFirstName}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.HERES_A_QUICK_CONFIRMATION_THAT_YOUR_INTRO_MEETING_WAS_CANCELLED}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.IF_YOUD_LIKE_TO_REARRANGE} <a href="\${acuityLink}">\${strings.CLICK_THIS_LINK}</a> \${strings.WHENEVER_YOURE_READY}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.WE_HOPE_TO_MEET}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${navigatorFirstName}
+          </p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
+        <mj-text align="left" color="#6A6C73">
+          <p>Focus on you</p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
@@ -56,7 +68,7 @@ const mjml = `<mjml>
 
 const getHtmlEmail = () =>{
 
-  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict' });
+  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict', minify: true });
 
   if (errors.length) {
     console.error(`Error: `);

@@ -23,34 +23,46 @@ const mjml = `<mjml>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text><p>
-          Hi \${memberFirstName}
-        </p></mj-text>
-        <mj-text><p>
-          Here’s a quick confirmation that your intro meeting was rescheduled successfully. I’ll see you on <strong>\${prettyDate}</strong>
-        </p></mj-text>
+        <mj-text>
+          <p>
+            \${strings.HI} \${memberFirstName}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.HERES_A_QUICK_CONFIRMATION_THAT_YOUR_INTRO_MEETING_WAS_RESCHEDULED} <strong>\${prettyDate}</strong>
+          </p>
+        </mj-text>
         <mj-button css-class="gmail-show" href="\${googleCalendarLink}">
-          Add to calendar
+          \${strings.ADD_TO_CALENDAR}
         </mj-button>
         <mj-button css-class="gmail-hide" href="\${icsFileDownloadLink}">
-          Add to calendar
+          \${strings.ADD_TO_CALENDAR}
         </mj-button>
-        <mj-text><p>
-          I’ll be in touch the day before with a reminder and some practical info. If you have anything to ask me in the meantime, just reply to this email.
-        </p></mj-text>
-        <mj-text><p>
-          Take care,
-        </p></mj-text>
-        <mj-text><p>
-          \${navigatorFirstName}
-        </p></mj-text>
+        <mj-text>
+          <p>
+            \${strings.ILL_BE_IN_TOUCH_THE_DAY_BEFORE}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.TAKE_CARE}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${navigatorFirstName}
+          </p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
+        <mj-text align="left" color="#6A6C73">
+          <p>Focus on you</p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
@@ -62,7 +74,7 @@ const mjml = `<mjml>
 
 const getHtmlEmail = () =>{
 
-  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict' });
+  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict', minify: true });
 
   if (errors.length) {
     console.error(`Error: `);

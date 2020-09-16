@@ -23,40 +23,56 @@ const mjml = `<mjml>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text><p>
-          Hi \${memberFirstName}
-        </p></mj-text>
-        <mj-text><p>
-          I'm \${navigatorFirstName}, and I’ll be helping you match with the right therapist at Oliva. We’re all set for your intro meeting on <strong>\${prettyDate}</strong>
-        </p></mj-text>
+        <mj-text>
+          <p>
+            \${strings.HI} \${memberFirstName}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.IM} \${navigatorFirstName}, \${strings.AND_ILL_BE_HELPING_YOU} <strong>\${prettyDate}</strong>
+          </p>
+        </mj-text>
         <mj-button css-class="gmail-show" href="\${googleCalendarLink}">
-          Add to calendar
+          \${strings.ADD_TO_CALENDAR}
         </mj-button>
         <mj-button css-class="gmail-hide" href="\${icsFileDownloadLink}">
-          Add to calendar
+          \${strings.ADD_TO_CALENDAR}
         </mj-button>
-        <mj-text><p>
-          If you have any questions or concerns, you can reach out to me whenever you like.
-        </p></mj-text>
-        <mj-text><p>
-          You’ve already taken a big step towards better emotional wellbeing. So relax and leave everything to me until our first meeting. I’ll be in touch just before with a quick reminder.
-        </p></mj-text>
-        <mj-text><p>
-          Really looking forward to meeting you.
-        </p></mj-text>
-        <mj-text><p>
-          Take care,
-        </p></mj-text>
-        <mj-text><p>
-          \${navigatorFirstName}
-        </p></mj-text>
+        <mj-text>
+          <p>
+            \${strings.IF_YOU_HAVE_ANY_QUESTIONS}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.YOUVE_ALREADY_TAKEN_A_BIG_STEP}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.REALLY_LOOKING_FORWARD}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${strings.TAKE_CARE}
+          </p>
+        </mj-text>
+        <mj-text>
+          <p>
+            \${navigatorFirstName}
+          </p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-section>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
+        <mj-text align="left" color="#6A6C73">
+          <p>Focus on you</p>
+        </mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
@@ -68,7 +84,7 @@ const mjml = `<mjml>
 
 const getHtmlEmail = () =>{
 
-  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict' });
+  const { html, errors } = mjml2html(mjml, { validationLevel: 'strict', minify: true });
 
   if (errors.length) {
     console.error(`Error: `);
