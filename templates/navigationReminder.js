@@ -27,7 +27,7 @@ const mjml = `<mjml>
         </mj-text>
         <mj-text>
           <p>
-            \${strings.JUST_A_QUICK_REMINDER} <strong>\${prettyTime}</strong> \${strings.TOMORROW}
+            \${strings.JUST_A_QUICK_REMINDER} <strong>\${prettyTime}</strong>.
           </p>
         </mj-text>
         <mj-text>
