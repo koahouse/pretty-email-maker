@@ -23,28 +23,28 @@ const mjml = `<mjml>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
         <mj-text><p>
-          Hi \${memberFirstName}
+          \${strings.HI} \${memberFirstName}
         </p></mj-text>
         <mj-text><p>
-          It was great to meet you the other day.
+          \${strings.IT_WAS_GREAT_TO_MEET_YOU}
         </p></mj-text>
         <mj-text><p>
-					Good news — we’ve found a therapist we think will fit your needs.
+					\${strings.GOOD_NEWS_WEVE_FOUND_A_THERAPIST}
         </p></mj-text>
         <mj-text><p>
-          You can read my report on why I’ve made this recommendation <a href="\${memberReportFileLink}">here</a>. It’s encrypted, so only you and I can access it.
+          \${strings.YOU_CAN_READ_MY_REPORT_ON_WHY} <a href="\${memberReportFileLink}">\${strings.HERE}</a>. \${strings.ITS_ENCRYPTED_SO_ONLY_YOU_AND_I}
         </p></mj-text>
         <mj-text><p>
-          When you’re ready, you can go ahead and book your first sessions.
+          \${strings.WHEN_YOURE_READ_YOU_CAN_GO_AHEAD_AND_BOOK}
         </p></mj-text>
         <mj-button href="\${schedulingLink}">
-				  Book your first sessions
+				  \${strings.BOOK_YOUR_FIRST_SESSIONS}
         </mj-button>
         <mj-text><p>
-          As always, feel free to reply to this email if you have a question or concern.
+          \${strings.AS_ALWAYS_FEEL_FREE_TO_REPLY}
         </p></mj-text>
         <mj-text><p>
-					Take care,
+					\${strings.TAKE_CARE}
         </p></mj-text>
         <mj-text><p>
           \${navigatorFirstName}

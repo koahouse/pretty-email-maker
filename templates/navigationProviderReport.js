@@ -23,25 +23,22 @@ const mjml = `<mjml>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
         <mj-text><p>
-          Hi \${providerFirstName}
+          \${strings.HI} \${providerFirstName}
         </p></mj-text>
         <mj-text><p>
-					I just matched you with a member.
+					\${strings.I_JUST_MATCHED_YOU}
         </p></mj-text>
         <mj-text><p>
-					You can get my report and recommendation by clicking below. It's encrypted so only you and I can see it.
-        </p></mj-text>
-        <mj-button href="\${providerReportFileLink}">
-				  Get your report
-        </mj-button>
-        <mj-text><p>
-          If you need anything at all just reply to this email.
+					\${strings.YOU_CAN_READ_MY_REPORT_ON_WHY} <a href="\${providerReportFileLink}">\${strings.HERE}</a>. \${strings.ITS_ENCRYPTED_SO_ONLY_YOU_AND_I}
         </p></mj-text>
         <mj-text><p>
-					Warmly
+          \${strings.IF_YOU_NEED_ANYTHING_AT_ALL_JUST_REPLY}
         </p></mj-text>
         <mj-text><p>
-          \${navigatorFirstName}<br/> <span>Care navigator</span>
+					\${strings.TAKE_CARE}
+        </p></mj-text>
+        <mj-text><p>
+          \${navigatorFirstName}
         </p></mj-text>
       </mj-column>
     </mj-section>
@@ -49,7 +46,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73"><p>Oliva aims to take the stress and anxiety out of finding yourself the right support</p></mj-text>
+        <mj-text align="left" color="#6A6C73"><p>Focus on you</p></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw>
