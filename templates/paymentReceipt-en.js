@@ -26,7 +26,7 @@ const mjml = `<mjml>
             <strong>Paid</strong><br/> £%total%
           </p>
         </mj-text>
-        <mj-button css-class="gmail-show" href="%schedulehref%">
+        <mj-button href="%schedulehref%" target="_self">
           Schedule a session
         </mj-button>
         <mj-text>
