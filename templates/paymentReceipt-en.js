@@ -4,11 +4,7 @@ const { writeFileSync } = require('fs');
 
 const mjml = `<mjml>
   <mj-head>
-    <mj-style>
-      .body-left > div { Margin: 0px 20px !important; } p { margin: 0; } .medium { font-weight: 600 }
-    </mj-style>
     <mj-attributes>
-
       <mj-all font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica Neue', Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" />
       <mj-body background-color="#ffffff" />
       <mj-text font-size="14px" font-weight="400" line-height="24px" padding="0 0 24px 0" />
@@ -16,57 +12,30 @@ const mjml = `<mjml>
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-raw>
-      <div class="body-left">
-    </mj-raw>
     <mj-section>
       <mj-column>
         <mj-divider border-color="transparent"></mj-divider>
-        <mj-text>
-          <p>
-            Hi %first%
-          </p>
-        </mj-text>
         <mj-text>
           <p>
             Thanks for your payment. Here is a receipt for your records.
           </p>
-        </mj-text>
-        <mj-text>
           <p>
-            <span class="medium">Plan type</span> %product%<br/>
-            <span class="medium">Paid</span> %total%
+            <strong>Plan</strong><br/> %product%
+            <br/>
+            <strong>Price</strong><br/> £%total% / month <br/>
+            <strong>Paid</strong><br/> £%total%
           </p>
         </mj-text>
+        <mj-button css-class="gmail-show" href="%schedulehref%">
+          Schedule a session
+        </mj-button>
         <mj-text>
           <p>
-            If you need any help related to plans and payments, you can email <a href="mailto:support@oliva.house">support@oliva.house</a>​ any time.
-          </p>
-        </mj-text>
-        <mj-text>
-          <p>
-            Take care,
-          </p>
-        </mj-text>
-        <mj-text>
-          <p>
-            Team Oliva
+            If you need help related to plans and payment, you can email <a href="mailto:support@oliva.house">support@oliva.house</a> at any time.
           </p>
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section>
-      <mj-column>
-        <mj-image align="left" padding="0px" width="100px" src="https://oliva-static-assets.s3.amazonaws.com/Oliva-logo-93x29%402x.jpg"></mj-image>
-        <mj-divider border-color="transparent"></mj-divider>
-        <mj-text align="left" color="#6A6C73">
-          <p>Focus on you</p>
-        </mj-text>
-      </mj-column>
-    </mj-section>
-    <mj-raw>
-      </div>
-    </mj-raw>
   </mj-body>
 </mjml>`;
 
