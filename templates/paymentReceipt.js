@@ -51,7 +51,7 @@ const mjml = `<mjml>
       <mj-column>
         <mj-text>
           <p>
-            \${strings.YOU_HAVE} \${expiry} \${strings.TO_USE_YOUR_SESSIONS}
+            \${strings.REGULAR_THERAPY_HAS} \${expiryMonths}.  \${strings.THEY_WILL_EXPIRE_ON} \${expiryDay}.
           </p>
         </mj-text>
         <mj-text>
