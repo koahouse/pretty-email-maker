@@ -16,7 +16,23 @@ code {
 }
 
 .container {
+  color: #ccc;
   display: flex;
+  overflow: hidden;
+}
+
+.email-type-container {
+  background: #222;
+}
+
+.email-type-container > div {
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.email-type-container > div.active {
+  background: #444;
 }
 
 .inputs-container {
@@ -28,13 +44,23 @@ code {
   user-select: none;
 }
 
+.inputs-container input[type="radio"] {
+  display: inline;
+  margin-top: 0;
+}
+
+.inputs-container input[type="radio"] + label {
+  display: inline;
+  margin-top: 0;
+}
+
 .inputs-container label {
-  color: #fff;
   margin-top: 16px;
 }
 
-.inputs-container input {
+.inputs-container textarea {
   margin-top: 8px;
+  min-height: 96px;
   padding: 8px;
 }
 
@@ -73,4 +99,10 @@ code {
 .html-container {
   flex-grow: 1;
   overflow-y: scroll;
+}
+
+.html-container.pending {
+  background: url(https://media.giphy.com/media/FcSNVseHOTJbq/giphy.gif);
+  background-size: cover;
+  background-position: center;
 }
