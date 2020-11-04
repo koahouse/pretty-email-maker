@@ -3,7 +3,8 @@ import React, { Fragment, useRef, useEffect, useState } from 'react';
 import { getStrings } from './i18n';
 import { getMatchConfirmationHtml } from './templateStrings/getMatchConfirmationHtml';
 import { getMatchConfirmationForTherapistHtml } from './templateStrings/getMatchConfirmationForTherapistHtml';
-import { EMAIL_TYPES, MEMBER_MATCH_CONFIRMATION, THERAPIST_MATCH_CONFIRMATION } from './constants';
+import { getSessionConfirmationHtml } from './templateStrings/getSessionConfirmationHtml';
+import { EMAIL_TYPES, MEMBER_MATCH_CONFIRMATION, SESSION_CONFIRMATION, THERAPIST_MATCH_CONFIRMATION } from './constants';
 import { getPrettyDateTime } from './utils/getPrettyDateTime';
 import { getTherapistNames } from './utils/getTherapistNames';
 
@@ -57,6 +58,29 @@ function App() {
         therapistFirstName,
         getPrettyDateTime(datetime, calendarTimezone, languageCode),
         location,
+      );
+      htmlContainer.current.innerHTML = html;
+      setIsValid(true);
+      return;
+    }
+
+    if (activeEmailType === SESSION_CONFIRMATION) {
+
+      if (!appointment || !calendarLinks) return;
+
+      const { firstName, location, datetime, timezone } = JSON.parse(appointment);
+      const [googleCalendarLink, icsFileDownloadLink] = JSON.parse(calendarLinks);
+
+      const [therapistFirstName, therapistLastName] = getTherapistNames(location);
+      const html = getSessionConfirmationHtml(
+        strings,
+        firstName,
+        [therapistFirstName, therapistLastName].join(' '),
+        getPrettyDateTime(datetime, timezone, languageCode),
+        googleCalendarLink,
+        icsFileDownloadLink,
+        location,
+        therapistFirstName
       );
       htmlContainer.current.innerHTML = html;
       setIsValid(true);
@@ -122,7 +146,7 @@ function App() {
             <label for="es">Castellano</label>
             <label>Get the appointment data from Marc and paste it in here</label>
             <textarea onChange={handleChangeAppointment} type="text" value={appointment}/>
-            {[MEMBER_MATCH_CONFIRMATION].includes(activeEmailType) && (
+            {[MEMBER_MATCH_CONFIRMATION, SESSION_CONFIRMATION].includes(activeEmailType) && (
               <Fragment>
                 <label>Get the calendar links from Marc and paste them in here</label>
                 <textarea onChange={handleChangeCalendarLinks} type="text" value={calendarLinks}/>

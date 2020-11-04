@@ -105,4 +105,5 @@ code {
   background: url(https://media.giphy.com/media/FcSNVseHOTJbq/giphy.gif);
   background-size: cover;
   background-position: center;
+  opacity: 0.4;
 }

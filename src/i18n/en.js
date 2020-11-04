@@ -143,6 +143,10 @@ const en = {
   I_HAVE_ASSIGNED_YOU_TO: 'I have assigned you to',
   BECAUSE_I_BELIEVE_YOUR_EXPERIENCE: 'because I believe your experience is a great match for their goals and needs',
   I_AM_ATTACHING_A_REPORT_TO_HELP: 'I’m attaching a report to help you get started. It’s encrypted, so only you and I can access it',
+  WE_HOPE_YOUR_SESSION_WITH: 'We hope your session with',
+  WENT_WELL: 'went well',
+  YOUR_NEXT_SESSION_IS_SCHEDULED_FOR: 'Your next session is scheduled for',
+  YOUR_TEAM_AT_OLIVA: 'Your Oliva team'
 };
 
 module.exports = { en };

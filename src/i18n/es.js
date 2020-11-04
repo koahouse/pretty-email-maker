@@ -117,13 +117,17 @@ const es = {
   AFTER_CAREFULLY_REVIEWING: '[Pending translation]',
   YOURE_ALL_SET_FOR_YOUR_FIRST: '[Pending translation]',
   ON: '[Pending translation]',
-  WHEN_ITS_TIME: '[Pending translation]',
-  THIS_LINK: '[Pending translation]',
-  TO_JOIN_THE_CALL: '[Pending translation]',
+  WHEN_ITS_TIME: 'Cuando sea el momento de tu sesión, simplemente tienes que hacer clic en',
+  THIS_LINK: 'este enlace',
+  TO_JOIN_THE_CALL: 'para unirte a la videollamada',
   I_HAVE_ATTACHED: '[Pending translation]',
   ITS_ENCRYPTED: '[Pending translation]',
   FROM_HERE_ON_ALL_YOU_NEED: '[Pending translation]',
   TO_SEE_HOW_THINGS_ARE_GOING: '[Pending translation]',
+  WE_HOPE_YOUR_SESSION_WITH: 'Esperamos que tu sesión con',
+  WENT_WELL: 'haya ido muy bien',
+  YOUR_NEXT_SESSION_IS_SCHEDULED_FOR: 'Tu próxima sesión está programada el',
+  YOUR_TEAM_AT_OLIVA: 'Tu equipo Oliva'
 };
 
 module.exports = { es };
